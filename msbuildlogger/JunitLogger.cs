@@ -89,7 +89,7 @@ namespace MSBuildLogger
 
             // This has the effect of terminating the build process
             // on first error
-            Environment.Exit(-1);
+            // Environment.Exit(-1);
         }
 
         void eventSource_WarningRaised(object sender, BuildWarningEventArgs e)
