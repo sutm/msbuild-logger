@@ -219,6 +219,7 @@ namespace MSBuildLogger
             }
 
             xmlWriter.WriteAttributeString("type", m.Code);
+            xmlWriter.WriteAttributeString("message", m.Description);
             xmlWriter.WriteString($"({m.Line}) {m.Code}: {m.Description}");
             xmlWriter.WriteEndElement();
         }
